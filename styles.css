@@ -1,0 +1,251 @@
+/* I am Fengler */
+body {  
+    font-family: Arial, sans-serif;  
+}  
+  
+/* Header styles */  
+.header {  
+    background-color: rgb(0, 255, 200);  
+    color: rgb(255, 0, 0);
+    text-align: center;  
+    display: flex; /* Use Flexbox layout to ensure that images and titles are on the same line */
+    padding: 20px;  
+  }  
+.left-image {  
+    /* Float the image to the left, but be aware that this may affect the text wrapping effect */  
+    /* Due to the use of Flexbox, a float is not required here */  
+    width: 70px; /* Set the image width to the size you want */  
+    height: auto; /* Maintain the original scale of the image */  
+    margin-right: 10px; /* Add some spacing between images and titles */  
+}  
+/* Navigation styles */  
+.topnav {  
+    display: flex; /* Using Flexbox Layout */  
+    justify-content: center; /* Horizontal neutron element */
+    overflow: hidden;  
+    background-color: #c1ec00;  
+  }  
+  .topnav a {  
+    float: left;  
+    display: block;  
+    color: rgb(209, 0, 0);  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+  }  
+  .topnav a:hover {  
+    background-color: lightgrey;  
+    color: white;  
+  }  
+  
+/* Page styles */  
+.page {  
+    display: none;  
+    padding: 20px;  
+}  
+  
+/* Additional class for hiding elements */  
+.hidden {  
+    display: none;  
+}   
+
+.hero-banner {  
+    /* Add style to Hero banner */  
+    width: 200px; /* Can be adjusted according to demand */  
+    height: 200px; /* Adjust based on image size and page layout */  
+    background-image: url('A.jpg'); /* If the image loading fails, a background image can be used as an alternative */  
+    background-size: cover; /* Ensure that the image covers the entire container*/  
+    background-position: center; /* Center Image  */  
+    text-align: center; /* If you need to add text above to center it */  
+    position: relative; /* If you need to add an overlay or text on top of it */  
+}  
+
+/* If using<img>tags, this style may be necessary to ensure that the image is displayed correctly */  
+.hero-banner img {  
+    width: 200px; /* Make the image width the same as the container width */  
+    height: auto; /* Maintain the scale of the image */  
+}  
+/* Set styles for containers and list items */  
+.container {  
+    display: flex;  
+    flex-wrap: wrap; /* If necessary, allow line breaks */  
+    justify-content: center; /* horizontally */  
+    max-width: 100%; /* Or set specific widths as needed */  
+    padding: 20px;  
+}  
+.centered-heading {  
+    /* Set font size */  
+    font-size: 32px; /* You can adjust this value as needed */    
+    color: red; /* You can adjust this color value as needed, such as using hexadecimal color codes, RGB, HSL, etc */  
+    /* Center text horizontally */  
+    text-align: center;  
+}
+/* Other Styles */
+.container {  
+    display: flex;  
+    flex-wrap: wrap; /* Allow project line breaks */  
+    justify-content: space-between; /* The spatial distribution between projects */  
+    padding: 10px; /* Inner edge distance of container */  
+}  
+  
+.box {  
+    flex: 0 0 calc(33.33% - 20px); /* The width is one-third of the container minus the outer margin */  
+    margin-bottom: 20px; /* Bottom outer margin, used to separate rows */  
+    padding: 20px; /* padding  */  
+    border: 1px solid blue; /* Optional border */  
+    background-color: lightgray; /* You can adjust this color value as needed */
+    box-sizing: border-box; /* Ensure that padding and borders do not increase the width of elements */  
+}  
+  
+/* Clear the bottom outer margin of the last row (optional) */  
+.container .box:nth-last-child(-n+3):nth-child(3n+1) {  
+    margin-bottom: 0;  
+}  
+  
+/* Adjust the text style inside the box as needed */  
+.box h2 {  
+    text-align: center;  
+    font-size: 18px;  
+    margin-top: 0;  
+}  
+  
+.box p {  
+    font-size: 16px;  
+    line-height: 1.5;  
+}  
+  
+/* If the content of a box is particularly long, you may need to set the maximum height or overflow handling */  
+.box {  
+    max-height: 200px; /* Optional maximum height */  
+    overflow-y: auto; /* If the content exceeds the maximum height, display a vertical scroll bar */  
+}
+/* Contact information box */  
+.contact-box {  
+    display: flex;  
+    justify-content: space-between; /* Spread two divs horizontally */
+    flex: 1; /* Occupy remaining space */  
+    margin-left: 20px; /* Optional, left outer margin */  
+    padding: 20px;  
+    border: 1px solid blue;  
+    background-color: lightgray; /* You can adjust this color value as needed */
+    box-sizing: border-box;  
+}  
+.contact-info, .working-hours {  
+    /* You can add some styles to make the two divs more beautiful */  
+    flex-basis: 50%; /* Allow each div to occupy approximately half of its width, but retain some space */  
+}  
+.contact-title {  
+    font-weight: bold; /* Bold Title */  
+    display: block; /* Ensure the title is on a new line */  
+    margin-bottom: 5px; /* The spacing between the title and the following content */  
+}
+.flex-container {  
+    display: flex;  
+    justify-content: space-between; /* Make sub elements evenly distributed on the main axis */  
+  }  
+    
+  .photo-with-description {  
+    /* You can add styles such as width and margins as needed */  
+    flex: 1; /* Elastic width, occupying a portion of the remaining space */  
+  }  
+    
+  .contact-info {  
+    /* You can add styles such as width and margins as needed */  
+    flex: 1; /* Elastic width, occupying a portion of the remaining space */  
+    margin-left: 20px; /* If necessary, you can add the left margin */  
+  }  
+  .flex-container {  
+    display: flex;  
+  }  
+    
+  .contact-info {  
+    /* Assuming width is set here, or space is occupied through the flex attribute */  
+    flex: 1;  
+    padding: 20px;  
+    border: 1px solid #ccc; /* Optional, to see the boundaries clearly */  
+  }  
+    
+  /* form sheet  */  
+  form label {  
+    display: block;  
+    margin-bottom: 5px;  
+  }  
+    
+  form input[type="text"],  
+  form input[type="email"],  
+  form textarea {  
+    width: 100%; /* Make the input box occupy the entire row width */  
+    padding: 5px;  
+    margin-bottom: 10px; /* There is some spacing between each input box */  
+  }  
+    
+  form textarea {  
+    height: 100px; /* Set the height of the text field */  
+  }  
+    
+  /* Submit successful message style */  
+  #successMessage {  
+    color: green;  
+    margin-top: 10px;  
+  }  
+  footer {  
+    background-color: #000000; /* 浅灰色背景 */  
+    text-align: center; /* 使内容居中（但在这个案例中，我们已经在.footer-content中设置了） */  
+    padding: 10px 0; /* 页脚上下内边距 */  
+    font-family: Arial, sans-serif; /* 设置字体 */  
+    color: #ffffff; /* 文本颜色 */  
+}  
+  
+.footer-content {  
+    /* 如果您需要为.footer-content添加额外的样式，可以在这里做 */  
+    /* 在这个例子中，我们只需要从HTML中移除margin-top和text-align的内联样式即可 */  
+}
+.container {  
+    width: 80%;  
+    margin: 0 auto;  
+    padding: 20px;  
+}  
+  
+/* 产品列表及包装样式 */  
+.product-list {  
+    display: flex; /* 使产品横向排列 */  
+    flex-wrap: wrap; /* 如果需要，允许换行 */  
+    justify-content: space-around; /* 间距均匀分布 */  
+}  
+/* 产品样式 */  
+.product {  
+    border: 1px solid #ccc; /* 产品框边框 */  
+    padding: 10px; /* 内边距 */  
+    border-radius: 8px; /* 边框圆角 */  
+    background-color: #f8f9fa; /* 背景色 */  
+    color: #333; /* 文本颜色 */  
+    transition: background-color 0.3s, border-color 0.3s; /* 过渡效果 */  
+}  
+  
+.product:hover {  
+    background-color: #e9ecef; /* 鼠标悬停时的背景色 */  
+    border-color: #868e96; /* 鼠标悬停时的边框色 */  
+}  
+  
+.price {  
+    margin: 5px 0; /* 价格和数量的上下间距 */  
+}  
+  
+.quantity {  
+    width: 50px; /* 输入框宽度 */  
+    margin-right: 10px; /* 右侧间距 */  
+}  
+  
+.remove {  
+    padding: 5px 10px; /* 删除按钮的内边距 */  
+    background-color: #dc3545; /* 删除按钮的背景色 */  
+    color: white; /* 删除按钮的文本颜色 */  
+    border: none; /* 无边框 */  
+    border-radius: 4px; /* 边框圆角 */  
+    cursor: pointer; /* 鼠标悬停时显示手指形状，表示可点击 */  
+    transition: background-color 0.3s; /* 过渡效果 */  
+}  
+  
+.remove:hover {  
+    background-color: #c82333; /* 鼠标悬停时的背景色 */  
+}
